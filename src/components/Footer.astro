@@ -1,0 +1,19 @@
+---
+import Social from './Social.astro';
+const platform = "github";
+const username = "neonity2020";
+---
+
+<style>
+    footer {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+</style>
+<footer>
+  <p>在 <a href={`https://www.${platform}.com/${username}`}>{platform}</a> 上查看我的更多项目!</p>
+  <Social platform="twitter" username="neonity2022" />
+  <Social platform="github" username="neonity2020" />
+  <Social platform="youtube" username="neonity" />
+</footer>
